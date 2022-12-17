@@ -9,7 +9,9 @@
         let articles;
 
         try {
-            articles = await fetch(`https://dev.to/api/articles?username=theether0`);
+            articles = await fetch(`https://dev.to/api/articles?username=theether0`); 
+		<!-- I have'nt written any articles -->
+
             articles = await articles.json();
         } catch (e) {
             console.log(e);
