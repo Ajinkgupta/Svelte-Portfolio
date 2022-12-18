@@ -105,5 +105,7 @@ Use GitHub Issues :
 ##### Social Media
 
 Twitter: <https://twitter.com/ajinkgupta>
+
 Dev.to : <https://dev.to/ajinkgupta>
+
 Instagram: <https://www.instagram.com/ajink_gupta>
