@@ -11,7 +11,7 @@
         let projects;
 
         try {
-            projects = await fetch(`https://ajinkgupta.github.io/ajinkgupta/projects/data.json`);
+            projects = await fetch(`https://ajinkgupta.me/ajinkgupta/projects/data.json`);
             projects = await projects.json();
         } catch (e) {
             console.log(e);
