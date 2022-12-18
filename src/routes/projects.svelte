@@ -1,9 +1,7 @@
-<!-- src/routes/blog.svelte -->
+<!-- src/routes/projects.svelte -->
 
 <svelte:head>
 	<title>Project</title>
-    <meta name="description" content=" A list of Projects done by Ajink Gupta"/>
-
 </svelte:head>
   
 <script context="module">
@@ -54,20 +52,3 @@
    
     {/each}
              </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
