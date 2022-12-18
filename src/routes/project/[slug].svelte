@@ -34,9 +34,10 @@
               <div class="  rounded-xl shadow-xl  bg-white overflow-hidden">
                 <img class="" src="{project.image}" style="width:100%;" alt="blog">
                 <div class="p-6">
-                  <h1 class="title-font text-lg font-medium text-gray-600 mb-3">{project.name}</h1><hr>
+                  <h1 class="title-font text-lg font-medium text-gray-600 mb-3">{project.name}</h1> 
                    
-                    
+                      <br>
+
 <div class="inline-flex rounded-md shadow-sm" role="group">
     <a href="{project.live}"><button type="button" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-transparent rounded-l-lg border border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
       Live 
@@ -46,11 +47,9 @@
     </button></a>
      
   </div>
-  
+  <br>
                         
-                        <style>
-                        pre { color:white;background: #212121;overflow: auto;width:200px;}
-                        </style>
+                       
 <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-row space-x-2"></div>
   {@html project.readme}
 </div>
