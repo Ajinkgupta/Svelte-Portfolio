@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   background: #1F1D2B; 
+   
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: border-box; 
+  }  
+
+
+  .orange_gradient {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 123px;
+    height: 123px;
+    border-radius: 100%;
+  
+    background: #ff6200;
+    filter: blur(200px);
+  }
+  
+  .center_gradient {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    width: 123px;
+    height: 123px;
+    border-radius: 100%;
+    background: #f6ff00;
+    filter: blur(200px);
+  }
+  
+
+
+  .blue_gradient {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+  
+    background: hsl(248, 100%, 50%);
+    filter: blur(200px);
+  }
+  
+  .gradient-border {
+    background: linear-gradient(
+      168.82deg,
+      #fb37ff 1.7%,
+      rgba(155, 111, 238, 0) 27.12%,
+      rgba(123, 127, 234, 0) 61.28%,
+      #1bb2de 99.52%
+    );
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  .bg-ram{background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 10.93%, rgba(255, 255, 255, 0) 90%);
+    border-radius: 15px; 
+     
+  color: white;}
+   
