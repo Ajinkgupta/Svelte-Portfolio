@@ -1,8 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "build/"
-<<<<<<< HEAD
-  functions = "functions/"
-=======
-  functions = "functions/"
->>>>>>> 8ea29bee8c3968b53aff08dce16f803f2b7be1f9
