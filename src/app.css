@@ -13,8 +13,9 @@
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   background: #1F1D2B; 
-   
+   background: #2c2c2c; 
+      color:#ffffff;
+       text:#ffffff;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
