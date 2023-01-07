@@ -49,9 +49,7 @@
     </div>
     <div class="p-3">
       <p class="block mb-1 font-extralight">{title}</p>
-      <p class="text-xs tracking-tighter text-gray-600">
-        {@html marked(content).slice(0, 150)}
-      </p>
+     
       <div class=' flex flex-wrap'>
 
       {#each tags as tag}
@@ -64,11 +62,11 @@
       <img
         src="https://avatars.githubusercontent.com/u/76146259?v=4"
         alt=""
-        class="rounded-full h-7 opacity-40"
+        class="rounded-full h-7 opacity-100"
       />
       <div class="flex">
         
-        <a href={`/posts/${slug}`}   >   <button type="button" class="rounded-3xl font-bold inline-block px-6 py-2.5 bg-[#f6ff00] opacity-40	 text-black  text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Read </button></a>
+        <a href={`/posts/${slug}`}   >   <button type="button" class="rounded-3xl font-bold inline-block px-6 py-2.5 bg-[#f6ff00] opacity-80	 text-black  text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Read </button></a>
       
       </div>
        
@@ -78,5 +76,3 @@
  
   {/each}
   </div>
-<div class="py-8"></div>
-

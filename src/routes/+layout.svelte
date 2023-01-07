@@ -7,13 +7,30 @@
   </script>
   
   <Navbar />
-  <main class="container  max-w-4xl mx-auto px-4 mb-20">
+  <main class="container z-30  opacity-100 max-w-4xl mx-auto px-4 mb-20">
     <slot />
   </main>
-    <div class="orange_gradient" />
-  <div class="blue_gradient" /> <div class="orange_gradient" />
-  <div class="blue_gradient" /> <div class="orange_gradient" />
+   <div class="orange_gradient" />
   <div class="blue_gradient" />  
-  <div class="center_gradient" />
   <div class="center_gradient" /> 
+
+
+  <div class="orange_gradient" />
+  <div class="blue_gradient" />  
+  <div class="center_gradient" /> 
+
+  <div class="orange_gradient" />
+  <div class="blue_gradient" />  
+  <div class="center_gradient" /> 
+
+  <div class="orange_gradient" />
+  <div class="blue_gradient" />  
+  <div class="center_gradient" /> 
+ 
+
+  <div class="orange_gradient" />
+  <div class="blue_gradient" />  
+  <div class="center_gradient" /> 
+
+
   <Footer />

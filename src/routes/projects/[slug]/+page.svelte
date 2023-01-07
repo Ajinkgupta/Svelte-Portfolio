@@ -59,8 +59,10 @@
 
  
   </div>
-  <div class=" bg-black text-[#3D4451] rounded-xl p-2 "> 
+  <div class=" bg-black text-[#ffffff] rounded-xl p-2 "> 
   <article class="prose prose-xl">
     {@html marked(data.project.description)}
   </article>
 </div>
+
+<div class="py-8"></div>

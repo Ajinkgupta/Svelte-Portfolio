@@ -52,7 +52,7 @@
       {/if}
     </div>
   </div>
-    <div class=" bg-[#2c2c2c] text-[#ffffff] rounded-xl p-2 "> 
+    <div class=" bg-black text-[#ffffff] rounded-xl p-2 "> 
   <article div class="prose   prose-lg">
     {@html marked(content)}
   </article>

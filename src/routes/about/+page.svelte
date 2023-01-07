@@ -38,14 +38,14 @@
   <div class="relative  shadow  mx-auto h-48 w-48 -my-24 bg-slate-800 rounded-full overflow-hidden border-4">
        <img class="object-cover w-full" src={url} alt={name} >
      </div>
-     <div class="bg-slate-800 rounded-3xl p-5 text-center  pt-28">
+     <div class="bg-black border-2  border-white rounded-3xl p-5 text-center  pt-28">
       <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
       <p class="text-xl mb-4">{intro}</p>
       👇
      </div>
   </div>
   
-  <div class="bg-slate-800 rounded-3xl p-5  pt-28">
+  <div class="bg-black border-2  border-white rounded-3xl p-5  pt-28">
     
     <article div class="prose prose-lg">
     {@html marked(bio)}

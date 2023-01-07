@@ -28,10 +28,10 @@
   <div class="  pb-6 w-full justify-center items-center overflow-hidden  rounded-lg shadow-sm mx-auto">
     <div class="relative h-40"></div>
   
-  <div class="relative  shadow  mx-auto h-48 w-48 -my-24 bg-slate-800 rounded-full overflow-hidden border-4">
+  <div class="relative  shadow  mx-auto h-48 w-48 -my-24 border-white rounded-full overflow-hidden border-4">
        <img class="object-cover w-full" src={url} alt={name} >
      </div>
-     <div class="bg-slate-800 rounded-3xl p-5 text-center  pt-28" bg-black>
+     <div class="bg-black border-2  border-white	 rounded-3xl p-5 text-center  pt-28" >
       <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
       <p class="text-xl mb-4">{intro}</p>
        

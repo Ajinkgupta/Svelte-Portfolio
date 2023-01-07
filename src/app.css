@@ -56,7 +56,7 @@
     width: 123px;
     height: 123px;
     border-radius: 50%;
-  
+    z-index: 0;
     background: hsl(248, 100%, 50%);
     filter: blur(200px);
   }
@@ -73,12 +73,16 @@
     padding: 20px;
   }
 
-  .bg-ram{background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 10.93%, rgba(255, 255, 255, 0) 90%);
+  .bg-ram{background: linear-gradient(135deg, rgb(0, 0, 0) 10.93%, rgba(255, 255, 255, 0) 90%);
     border-radius: 15px; 
-    border: 2px white;
+    border: 2px solid  white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   color: white;}
 
- pre code{color:white;background: #212121;overflow: auto;}
+ pre {color:white; padding:4px; border-radius: 5px; margin-top: 5px;margin-bottom: 5px;   background: #212121;overflow-wrap: break-word; overflow-x:auto !important;}
+ 
+
 
 
    
