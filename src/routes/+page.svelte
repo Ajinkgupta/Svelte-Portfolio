@@ -32,7 +32,7 @@
        <img class="object-cover w-full" src={url} alt={name} >
      </div>
      <div class="bg-black border-2  border-white	 rounded-3xl p-5 text-center  pt-28" >
-      <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
+      <h1 class="text-3xl mb-4 font-bold tracking-wider">{name}</h1>
       <p class="text-xl mb-4">{intro}</p>
        
       <a href="/about">  <button type="button" class="rounded-3xl font-bold inline-block px-6 py-2.5 bg-[#f6ff00] text-black  text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">About me</button></a>
