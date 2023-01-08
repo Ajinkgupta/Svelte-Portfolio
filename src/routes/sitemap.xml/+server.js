@@ -35,7 +35,7 @@ const sitemap = (
     .map(
       post => `
   <url>
-    <loc>${siteUrl}/posts/${post.slug}</loc>
+    <loc>${siteUrl}/blog/${post.slug}</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -79,7 +79,7 @@ export const GET = async () => {
   )
   const { siteUrl } = projectMetadatas[0]
 
-  const pages = [`projects`, `posts`, `about`]
+  const pages = [`projects`, `blog`, `about`]
   const body = sitemap(posts, projects, pages, siteUrl)
 
   return new Response(body, {
