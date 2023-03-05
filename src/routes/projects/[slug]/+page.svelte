@@ -53,9 +53,9 @@
   <div
     class="mb-5 prose flex prose-a:text-primary hover:prose-a:text-primary-focus"
   >
-  <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group"><a href={data.project.demo}><button type="button" class="rounded-l border-r-2 border-indigo-500     inline-block px-6 py-2.5 bg-[#f6ff00]  text-black font-bold text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Demo</button></a>
+  <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group"><a href={data.project.demo}><button type="button" class="rounded-l border-r-2 border-indigo-500     inline-block px-6 py-2.5 bg-[#a787ff]  text-black font-bold text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Demo</button></a>
 
-    <a  href={data.project.sourceCode}><button type="button" class="rounded-r inline-block px-6 py-2.5 bg-[#f6ff00] text-black font-bold text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Source Code</button></a></div>
+    <a  href={data.project.sourceCode}><button type="button" class="rounded-r inline-block px-6 py-2.5 bg-[#a787ff] text-black font-bold text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Source Code</button></a></div>
 
  
   </div>
