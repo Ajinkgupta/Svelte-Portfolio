@@ -83,6 +83,27 @@
  pre {color:white; padding:4px; border-radius: 5px; margin-top: 5px;margin-bottom: 5px;   background: #212121;overflow-wrap: break-word; overflow-x:auto !important;}
  
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #2c2c2c;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a787ff;  
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #a787ff; 
+}
 
 
    
