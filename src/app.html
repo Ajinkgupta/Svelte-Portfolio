@@ -5,14 +5,54 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+		
+		<style>
+										h2 {
+							  font-size: 1.5rem;
+							  font-weight: bold;
+							  margin-top: 1.5rem;
+							  margin-bottom: 1rem;
+							}
+
+							h3 {
+							  font-size: 1.25rem;
+							  font-weight: bold;
+							  margin-top: 1.5rem;
+							  margin-bottom: 1rem;
+							}
+										p {
+							  font-size: 1rem;
+							  line-height: 1.5;
+							  margin-bottom: 1rem;
+							  padding-top: 10px;
+							  padding-bottom: 10px;
+							}
+							h1 {
+							  font-size: 2rem;
+							  font-weight: bold;
+							  margin-top: 2rem;
+							  margin-bottom: 1rem;
+							}
+							ul {
+							  list-style: none;
+								padding-top:5px;
+							}
+
+							li:before {
+							  content: "•";
+							  margin-right: 0.5rem;
+							}
+
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 		
 		<div class="orange_gradient"></div>
 		<div class="orange_gradient"></div>
-		<div class="center_gradient"></div>
+		 
 		<div class="blue_gradient"></div>
 		<div class="blue_gradient"></div>
+		 
 	</body>
 </html>
