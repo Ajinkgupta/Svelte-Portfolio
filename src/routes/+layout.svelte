@@ -7,7 +7,7 @@
   </script>
   
   <Navbar />
-  <main class="container z-30  opacity-100 max-w-4xl mx-auto px-4 mb-20">
+  <main >
     <slot />
   </main>
 <!-- 

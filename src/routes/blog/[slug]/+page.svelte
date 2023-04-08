@@ -23,13 +23,17 @@
     url={`${siteUrl}${pathname}`}
   />
   
-  <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
-    <img
+  <div class="container z-30  opacity-100 max-w-4xl mx-auto px-4 mb-20">
+  
+    <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
+      <div class="green-pink-gradient p-[1px]  rounded-xl  ">
+  
+        <img
       class="rounded-xl"
       src={coverImage.url}
       alt={`Cover image for ${title}`}
     />
-  </div>
+  </div></div>
   
   <div class="prose prose-xl">
     <h1 class="text-xl">{title}</h1>
@@ -57,4 +61,4 @@
     {@html marked(content)}
   </article>
 </div>
- 
+</div>

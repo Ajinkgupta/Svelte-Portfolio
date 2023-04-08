@@ -24,55 +24,69 @@
     image={openGraphDefaultImage.url}
     url={`${siteUrl}${pathname}`}
   />
-  
-  <h1 class="font-extrabold mb-20 shadow text-center  text-4xl"> My Blog posts</h1>
-  
-
-  <div class=" grid sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center ">
 
 
-  {#each data.posts as { title, slug, content, coverImage, tags }}
+  <div  class='relative max-w-7xl mx-auto sm:px-16 px-6'>
+    <section   >
+ 
+      <p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Welcome to my </p>
+      <h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Blog !</h2> 
 
-
-
-
-
-
-
-  <div class="bg-ram  w-72  rounded-md">
-    <div class="flex justify-center items-center leading-none">
-      <img
-      src={coverImage.url}
-      alt={`Cover image for ${title}`}
-        class="h-40 w-[250px] rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
-      />
-    </div>
-    <div class="p-3">
-      <p class="block mb-1 font-extralight">{title}</p>
-     
-      <div class=' flex flex-wrap'>
-
-      {#each tags as tag}
-      <span         class="flex flex-wrap p-1 m-1 px-4 justify-between items-center text-sm font-medium rounded-xl cursor-pointer bg-purple-500 text-gray-200 hover:bg-purple-600 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-gray-100">
-      {tag}</span>
-    {/each}
-    </div>
-    </div>
-    <div class="flex justify-between items-center p-2">
-      <img
-        src="https://avatars.githubusercontent.com/u/76146259?v=4"
-        alt=""
-        class="rounded-full h-7 opacity-100"
-      />
-      <div class="flex">
+    <p class='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' >
+       Here, I'll be sharing insights on software development, from front-end web development to back-end programming. Whether you're an aspiring developer or a seasoned pro, my blog is the perfect resource for you. Stay tuned for tips, lessons learned, and best practices for building high-quality software in today's fast-paced digital landscape.
+    </p>
+  </section>
+    
+    <div class='mt-20 flex flex-wrap gap-7'>
+   
+      {#each data.posts as { title, slug, content, coverImage, tags }}
+    
         
-        <a href={`/blog/${slug}`}   >   <button type="button" class="rounded-3xl font-bold inline-block px-6 py-2.5 bg-[#a787ff] opacity-80	 text-black  text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Read </button></a>
-      
-      </div>
-       
+<div class="green-pink-gradient p-[1px]  rounded-2xl  sm:w-[31%]  w-full">
+  
+
+  <a href="{`/blog/${slug}`}"><div
+  class='bg-[#151030] p-5 rounded-2xl  h-full  w-full'
+>
+  <div class='relative w-full h-[230px]'>
+    <img
+      src={coverImage.url}
+      alt='{title}'
+      class='w-full h-full object-cover rounded-2xl'
+    />
+
+    <div class='absolute inset-0 flex justify-end m-3 card-img_hover'>
+      <a href="{`/post/${slug}`}"><div
+        class='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+      >
+      🚀  </div> </a>
     </div>
   </div>
+
+  <div class='mt-5'>
+    <h3 class='text-white font-bold text-[24px]'>{title}</h3>
+    <p class='mt-2 text-secondary text-[14px]'>  {content.slice(0, 80)}..</p>
+  </div>
+  <div class='mt-4 flex flex-wrap gap-2'>
+
+
+    {#each tags as tag}
+    <span         class="flex flex-wrap p-1 m-1 px-4 justify-between items-center text-[14px]   rounded-xl cursor-pointer bg-purple-500 text-gray-200 hover:bg-purple-600 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-gray-100">
+    {tag}</span>
+  {/each}
 
  
-  {/each}
   </div>
+</div></a>
+</div>
+
+      {/each}
+
+
+  
+     
+    </div>
+  
+    <div class="py-8"></div>
+  </div>
+

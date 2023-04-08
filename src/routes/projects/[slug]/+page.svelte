@@ -25,12 +25,15 @@
     url={`${siteUrl}${pathname}`}
   />
   
+  <div class="container z-30  opacity-100 max-w-4xl mx-auto px-4 mb-20">
   <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
-    <img
+    <div class="green-pink-gradient p-[1px]  rounded-lg  ">
+  
+      <img
       class="rounded-lg"
       src={data.project.image[0].url}
       alt={data.project.title}
-    />
+    /></div>
   </div>
   
   <h1 class="text-4xl font-semibold mb-5">{data.project.name}</h1>
@@ -66,3 +69,4 @@
 </div>
 
 <div class="py-8"></div>
+</div>
