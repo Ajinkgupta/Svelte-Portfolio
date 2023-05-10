@@ -1,0 +1,200 @@
+<style>
+  
+      input[type=button] {
+        padding: 10px 20px;
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=button]:hover {
+        background-color: purple;
+      }
+ input[type="number"] {
+  background-color: white;
+  color: black;
+}
+ table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}    </style>
+
+
+
+
+
+<div id="print">
+
+<form>
+  <label for="capacity">Knapsack Capacity:</label>
+  <input type="number" id="capacity" name="capacity" min="1" max="100"><br><br>
+  <label for="weights">Item Weights:</label>
+  <input type="text" id="weights" name="weights" placeholder="Comma separated values"><br><br>
+  <label for="profits">Item Profits:</label>
+  <input type="text" id="profits" name="profits" placeholder="Comma separated values"><br><br>
+  <input type="button" value="Solve" onclick="knapsack()">
+</form>
+<br>
+<div id="output"></div>
+
+<a href="https://quesnit.in/dynamic-knapsack-problem-solver">Solve Dynamic Knapsack Problems</a><br/>
+ 
+</div>
+
+<button onclick="printContent()">Print</button>
+
+
+ 
+<script>
+function printContent() {
+  var printDiv = document.getElementById("print");
+  var printContents = printDiv.innerHTML;
+  var originalContents = document.body.innerHTML;
+  document.body.innerHTML = printContents;
+  window.print();
+  document.body.innerHTML = originalContents;
+}
+</script>
+
+
+
+
+
+
+
+
+<script> 
+function knapsack() {
+  const capacity = Number(document.getElementById("capacity").value);
+  const weights = document
+    .getElementById("weights")
+    .value.split(",")
+    .map(Number);
+  const profits = document
+    .getElementById("profits")
+    .value.split(",")
+    .map(Number);
+  const n = weights.length;
+
+  // Initialize table with all zeros
+  const table = Array(n + 1)
+    .fill()
+    .map(() => Array(capacity + 1).fill(0));
+
+  // Fill in the table for each item and capacity
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= capacity; j++) {
+      if (weights[i - 1] <= j) {
+        table[i][j] = Math.max(
+          table[i - 1][j],
+          table[i - 1][j - weights[i - 1]] + profits[i - 1]
+        );
+      } else {
+        table[i][j] = table[i - 1][j];
+      }
+    }
+  }
+
+  // Find the selected items
+  const selectedItems = [];
+  let i = n,
+    j = capacity;
+  while (i > 0 && j > 0) {
+    if (table[i][j] !== table[i - 1][j]) {
+      selectedItems.push(i - 1);
+      j -= weights[i - 1];
+    }
+    i--;
+  }
+  selectedItems.reverse();
+
+  // Print the results
+  let output = "";
+  output += "<p>Knapsack Capacity: " + capacity + "</p>";
+  output += "<p>Item Weights: " + weights + "</p>";
+  output += "<p>Item Profits: " + profits + "</p>";
+  output += "<p>Table:</p>";
+  output += "<table><tbody>";
+  
+  // Add row and column headers for notation of row and column numbers
+  output += "<tr><td></td>";
+  for (let j = 0; j <= capacity; j++) {
+    output += "<td>" + j + "</td>";
+  }
+  output += "</tr>";
+  for (let i = 0; i <= n; i++) {
+    output += "<tr>";
+    output += "<td>" + i + "</td>";
+    for (let j = 0; j <= capacity; j++) {
+      output += "<td>" + table[i][j] + "</td>";
+    }
+    output += "</tr>";
+  }
+  output += "</tbody></table>";
+  output += "<p>Calculation Steps:</p>";
+  for (let i = 1; i <= n; i++) {
+    output += "<p>i = " + i + "</p>";
+    for (let j = 1; j <= capacity; j++) {
+      output += "<p>j = " + j + "</p>";
+      output +=
+        "<p>If (Weight[" +
+        i +
+        "] <= " +
+        j +
+        ") then</p>";
+      output +=
+        "<p>Table[" +
+        i +
+        "][" +
+        j +
+        "] = Max(Table[" +
+        (i - 1) +
+        "][" +
+        j +
+        "], Table[" +
+        (i - 1) +
+        "][" +
+        (j - weights[i - 1]) +
+        "] + Profit[" +
+        i +
+        "])</p>";
+      output += "<p>Else</p>";
+output += "<p>Table[" + i + "][" + j + "] = Table[" + (i - 1) + "][" + j + "]</p>";
+}
+}
+output += "<p>Final Table:</p>";
+output += "<table><tbody>";
+for (let i = 0; i <= n; i++) {
+output += "<tr>";
+for (let j = 0; j <= capacity; j++) {
+if (i == 0 && j == 0) {
+output += "<td></td>";
+} else if (i == 0) {
+output += "<td>" + j + "</td>";
+} else if (j == 0) {
+output += "<td>" + i + "</td>";
+} else {
+output += "<td>" + table[i][j] + "</td>";
+}
+}
+output += "</tr>";
+}
+output += "</tbody></table>";
+output += "<p>Maximum Profit: " + table[n][capacity] + "</p>";
+output += "<p>Selected Items: " + selectedItems.join(", ") + "</p>";
+
+document.getElementById("output").innerHTML = output;
+}
+
+
+
+    </script>
