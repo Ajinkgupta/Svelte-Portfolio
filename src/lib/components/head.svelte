@@ -22,9 +22,7 @@
     <link rel="canonical" href={url} />
     <!-- Meta Tags Generated via https://heymeta.com -->
       
-      
-      <meta name="google-site-verification" content="pmy_Ru3GGIbWjNIp8OJlVJoXC_E5dm856hPG4V564qQ" />
-  
+        
     <!-- HTML Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
