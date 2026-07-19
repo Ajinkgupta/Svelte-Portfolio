@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://ajink.in/:path*",
+      "statusCode": 307
+    }
+  ]
+}
