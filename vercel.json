@@ -1,4 +1,7 @@
 {
+  "framework": null,
+  "buildCommand": "mkdir -p public && printf '<!doctype html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0;url=https://ajink.in\"><title>Redirecting…</title><a href=\"https://ajink.in\">ajink.in</a>' > public/index.html",
+  "outputDirectory": "public",
   "redirects": [
     {
       "source": "/:path*",

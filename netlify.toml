@@ -1,10 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "mkdir -p build && printf '<!doctype html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0;url=https://ajink.in\"><title>Redirecting…</title><a href=\"https://ajink.in\">ajink.in</a>' > build/index.html"
   publish = "build/"
-  functions = "functions/"
 
 # Redirect every request to ajink.in (307 temporary redirect).
-# force = true makes this win even when a matching page/file exists.
+# force = true makes this win even when a matching file exists.
 [[redirects]]
   from = "/*"
   to = "https://ajink.in/:splat"
